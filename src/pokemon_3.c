@@ -3,12 +3,15 @@
 #include "battle_message.h"
 #include "data2.h"
 #include "event_data.h"
+#include "field_player_avatar.h"
+#include "fieldmap.h"
 #include "hold_effects.h"
 #include "item.h"
 #include "items.h"
 #include "link.h"
 #include "m4a.h"
 #include "main.h"
+#include "metatile_behavior.h"
 #include "pokemon.h"
 #include "rng.h"
 #include "rom4.h"
@@ -1098,6 +1101,9 @@ void ClearBattleMonForms(void)
 
 u16 sub_8040728(void)
 {
+    struct MapPosition position;
+    u16 r4;
+
     if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON)
         return BGM_BATTLE34;
     if (gBattleTypeFlags & BATTLE_TYPE_REGI)
@@ -1130,6 +1136,17 @@ u16 sub_8040728(void)
             return BGM_BATTLE20;
         }
     }
+
+    // Check for sand
+    PlayerGetDestCoords(&position.x, &position.y);
+    position.height = PlayerGetZCoord();
+
+    r4 = MapGridGetMetatileBehaviorAt(position.x, position.y);
+    if (MetatileBehavior_IsSandOrDeepSand(r4) == TRUE)
+    {
+      return BGM_SANDSTORM;
+    }
+
     return BGM_BATTLE27;
 }
 
