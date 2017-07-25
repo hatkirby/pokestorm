@@ -369,6 +369,7 @@ enum
     BGM_BATTLE35, // rival
     BGM_BATTLE38, // elite four
     BGM_BATTLE30, // aqua/magma leader
+    BGM_SANDSTORM
 };
 
 #endif // GUARD_SONGS_H

@@ -636,6 +636,7 @@ BGM_BATTLE34   = CF 01
 BGM_BATTLE35   = D0 01
 BGM_BATTLE38   = D1 01
 BGM_BATTLE30   = D2 01
+BGM_SANDSTORM  = D3 01
 
 '\l' = FA @ scroll up window text
 '\p' = FB @ new paragraph
