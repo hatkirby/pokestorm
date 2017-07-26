@@ -1,16 +1,7 @@
-# Pokémon Ruby and Sapphire [![Build Status][travis-badge]][travis]
+# Pokémon Sandstorm Version
 
-This is a disassembly of Pokémon Ruby and Sapphire.
+This is a silly romhack of Pokémon Ruby and Sapphire wherein the song Sandstorm by Darude plays in battles during sandstorms.
 
-It builds the following roms:
-
-* pokeruby.gba `sha1: f28b6ffc97847e94a6c21a63cacf633ee5c8df1e`
-* pokesapphire.gba `sha1: 3ccbbd45f8553c36463f13b938e833f652b793e4`
+Currently it only plays for wild encounters that start where there is an overworld sandstorm. It does not start playing if a sandstorm is conjured in battle, and it does not stop playing if the sandstorm is ended by another weather effect.
 
 To set up the repository, see [INSTALL.md](INSTALL.md).
-
-### irc: [freenode#pret][irc]
-
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
-[travis]: https://travis-ci.org/pret/pokeruby
-[travis-badge]: https://travis-ci.org/pret/pokeruby.svg?branch=master
