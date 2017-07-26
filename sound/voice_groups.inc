@@ -11093,7 +11093,7 @@ voicegroup_844F50C:: @ 844F50C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F608
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F614
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F620
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F62C
+	voice_square_2 2, 0, 0, 15, 0  @ 844F62C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F638
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F644
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 844F650
